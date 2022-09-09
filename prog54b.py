@@ -1,11 +1,11 @@
-first = 475
-second = 821
-third = 369
-fourth = 562
+first = float(input("First number: "))
+second = float(input("Second number: "))
+third = float(input("Third number: "))
+fourth = float(input("Fourth number: "))
 
 sum = first + second + third + fourth
 
-print("The sum is", sum)
+print("\nThe sum is", sum)
 
 average = sum / 4
 
