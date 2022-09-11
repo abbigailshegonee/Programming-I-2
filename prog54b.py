@@ -1,4 +1,5 @@
-first = float(input("First number: "))
+print("Enter four numbers to calculate the sum and average")
+first = float(input("\nFirst number: "))
 second = float(input("Second number: "))
 third = float(input("Third number: "))
 fourth = float(input("Fourth number: "))
