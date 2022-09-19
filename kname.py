@@ -43,23 +43,118 @@ class ktools:
     self.put()
 
   def a(self):
-    uhyj
-
+    self.m()
+    self.tl()
+    self.m()
+    self.put2()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.tr()
+    self.m()
+    self.put2()
+    self.ta()
+    self.m()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.tl()
+    self.m()
+    self.m()
+    
 
   def b(self):
-    wetw
-
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.m()
+    self.put()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.ta()
+    self.m()
+    self.m()
+    self.tr()
+    self.m()
+    self.put()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.ta()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    
 
   def i(self):
-    tryh4t
+    self.put()
+    self.m()
+    self.tl()
+    self.put5()
+    self.tl()
+    self.m()
+    self.put()
+    self.ta()
+    self.m()
+    self.m()
+    self.put()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.put()
+    self.m()
+    self.m()
+    
+    
 
 
   def g(self):
-    dfger
+    self.tl()
+    self.m()
+    self.put2()
+    self.put()
+    self.m()
+    self.ta()
+    self.m()
+    self.put2()
+    self.tr()
+    self.m()
+    self.m()
+    
+    
+    
 
 
   def l(self):
-    hgtnd
+    self.tl()
+    self.put5()
+    self.ta()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.put2()
    
   
 
