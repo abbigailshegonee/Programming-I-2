@@ -1,5 +1,4 @@
 from stanfordkarel import *
-from time import sleep
 
 
 class ktools:
@@ -74,7 +73,7 @@ class ktools:
     return front_is_clear()
     
     
-  def fib(self) -> bool:
+  def fid(self) -> bool:
     """front is blocked"""
     return not self.fic()
 
@@ -109,51 +108,32 @@ class ktools:
           self.m()
     pass
 
+  def mm(self, num):
+    """move multiple"""
+    for number in range(num):
+      self.m()
+
+  
+  def pickm(self, num):
+    """pick multiple"""
+    for i in range(0, num-1):
+      self.pick()
+      self.m()
+    self.pick()
+
+  def putm(self, num):
+    """put multiple"""
+    for _ in range(0, num-1):
+      self.put()
+      self.m()
+    self.put()
+
+  def
+
+    
+
 def main():
-    kt = ktools()
-    kt.m()
-    kt.tl()
-    kt.m()
-    kt.mazemove()
-    sleep(3)
-    
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.mazemove()
-    sleep(3)
-
-    kt.m()
-    kt.tr()
-    kt.m()
-    kt.tr()
-    kt.m()
-    kt.m()
-    kt.tr()
-    kt.m()
-    kt.tl()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.tl()
-    kt.mazemove()
-    sleep(3)
-
-    kt.ta()
-    kt.m()
-    kt.tl()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.m()
-    kt.ta()
-    kt.mazemove()
-    sleep(3)
-    
+    """ Karel code goes here! """
     
     pass
 
