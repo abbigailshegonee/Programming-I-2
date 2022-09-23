@@ -128,7 +128,35 @@ class ktools:
       self.m()
     self.put()
 
-    
+  def mput(self, num):
+    """move and put beeper"""
+    for i in range(0, num):
+      self.m()
+      self.put()
+
+  def mtl(self, num):
+    """move and turn left"""
+    for i in range(0, num):
+      self.m()
+      self.tl()
+
+  def tlm(self, num):
+    """turn left and move"""
+    for i in range(0, num):
+      self.tl()
+      self.m()
+
+  def mtr(self, num):
+    """move and turn right"""
+    for i in range(0, num):
+      self.m()
+      self.tr()
+
+  def trm(self, num):
+    """turn right and move"""
+    for i in range(0, num):
+      self.tr()
+      self.m()
 
 def main():
     """ Karel code goes here! """
