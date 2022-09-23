@@ -128,8 +128,6 @@ class ktools:
       self.m()
     self.put()
 
-  def
-
     
 
 def main():
