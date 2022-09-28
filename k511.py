@@ -42,38 +42,13 @@ class ktools:
     self.put2()
     self.m()
     self.put()
-
-  def h(self):
-    """Print H using beepers"""
-    self.tl()
-    self.put5()
-    self.tr()
-    self.m()
-    self.m()
-    self.m()
-    self.tr()
-    self.put5()
-    self.ta()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.tl()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
     
   def fic(self) -> bool:
     """front is clear"""
     return front_is_clear()
     
     
-  def fid(self) -> bool:
+  def fib(self) -> bool:
     """front is blocked"""
     return not self.fic()
 
@@ -193,8 +168,36 @@ class ktools:
         self.m()
     pass
 
+  def k511(self):
+    while not self.SOB():
+      self.jump()
+      while self.rib():
+        self.m()
+      self.tr()
+      self.m()
+      while self.fic():
+        self.m()
+      self.tl()
+    
+    self.pick
+
+  def jump2(self):
+    while self.fic():
+      self.m()
+    self.tl()
+    while self.rib():
+      self.m()
+    while self.rib():
+      self.m()
+      self.tr()
+    while self.rib():
+      self.m()
+      
+    
+
 def main():
-    """ Karel code goes here! """
+    kt = ktools()
+    kt.k511()
     
     pass
 
