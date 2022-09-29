@@ -202,49 +202,48 @@ class ktools:
     for i in range(0, num):
       self.bp()
 
-  
   def k519(self):
-    """code for k519"""
+    bcount = 0
     self.m()
     self.tl()
     self.mm(2)
-    while not beepers_in_bag() == 5:
-      if beepers_present() == 1:
+    while not bcount == 5:
+      while not self.SOB():
+        self.m()
+      while self.SOB():
+        self.pick()
+        bcount = bcount + 1
+      if bcount == 1:
         while not facing_north():
           self.tl()
+        bcount = 0
         self.m()
-      if beepers_present() == 2:
+      if bcount == 2:
         while not facing_west():
-          self.tl
+          self.tl()
+        bcount = 0
         self.m()
-      if beepers_present() == 3:
+      if bcount == 3:
         while not facing_south():
           self.tl()
+        bcount = 0
         self.m()
-      if beepers_present() == 4:
+      if bcount == 4:
         while not facing_east():
-          self.tl
+          self.tl()
+        bcount = 0
         self.m()
-      while not self.SOB():
-        self.m()
+        
     
-  def test(self):
-    self.m()
-    self.tl()
-    self.mm(2)
-    while not beepers_in_bag(4):
-      while not self.SOB():
-        self.m()
-      while beepers_present():
-        self.pick
-    self.tl()
-    self.m()
+    
+
+    
     
 
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.test()
+    kt.k519()
   
     pass
 
