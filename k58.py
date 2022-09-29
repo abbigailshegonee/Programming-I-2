@@ -213,20 +213,18 @@ class ktools:
     self.tl()
     self.mm(4)
     self.ta()
-    self.jump2(4)
-  
-  def jump2(self, num):
     for _ in range(0, num):
       while self.rib():
         self.m()
+        self.put()
       self.tr()
-      self.m()
+      self.mput(1)
       self.tr()
-      self.m()
       while self.fic():
         self.m()
-      self.tl
-      self.put()
+        self.put()
+      self.tl()
+      
     
     
 
