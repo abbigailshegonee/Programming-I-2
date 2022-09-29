@@ -235,7 +235,10 @@ class ktools:
         self.m()
         
     
-    
+  def bro(self):
+    while not self.SOB():
+      self.mazemove()
+    self.pick()
 
     
     

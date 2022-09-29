@@ -181,7 +181,11 @@ class ktools:
       self.tl()
     self.pick
       
-    
+  def bro(self):
+    """this would have worked too ;-;"""
+    while not self.SOB():
+      self.mazemove()
+    self.pick()
 
 def main():
     kt = ktools()
