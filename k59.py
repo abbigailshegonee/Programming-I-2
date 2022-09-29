@@ -193,39 +193,29 @@ class ktools:
         self.m()
     pass
 
-  def bp(self):
-    """beepers present"""
-    beepers_present()
-  
-  def start():
-    self.mm(4)
+  def start(self):
+    slef.m()
     self.tl()
-    self.mm(4)
-    
+    self.mm(5)
+    self.tr()
   
-  def k54(self, num):
-    while beepers_present() == num:
-      if (num % 2) == 0:
-        while not facing_east():
-          self.tl()
+  def k59(self, num):
+    """code for k59"""
+    for _ in range(0, num):
+      while self.rib():
+        self.put()
         self.m()
-        while beepers_present():
-          self.pick()
-      else:
-        while not facing_west():
-          self.tl()
+      while self.fib():
+        self.tr()
         self.m()
-        while beepers_present():
-          self.pick()
-    
-
-
+      
+      
 
 def main():
     """ Karel code goes here! """
     kt = ktools()
     kt.start()
-    kt.k54()
+    kt.k59(4)
     pass
 
 

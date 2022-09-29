@@ -169,6 +169,7 @@ class ktools:
     pass
 
   def k511(self):
+    """code for k511"""
     while not self.SOB():
       self.jump()
       while self.rib():
@@ -178,20 +179,7 @@ class ktools:
       while self.fic():
         self.m()
       self.tl()
-    
     self.pick
-
-  def jump2(self):
-    while self.fic():
-      self.m()
-    self.tl()
-    while self.rib():
-      self.m()
-    while self.rib():
-      self.m()
-      self.tr()
-    while self.rib():
-      self.m()
       
     
 
