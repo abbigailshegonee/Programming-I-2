@@ -86,12 +86,26 @@ class ktools:
       return True  #ends function there
     self.tl()
     return False
-    
+
+  
+  def lic(self) -> bool:
+    """left is clear"""
+    self.tl()
+    if self.fic():
+      self.tr()
+      return True
+    self.tr()
+    return False
 
   
   def rib(self) -> bool:
     """right is blocked"""
     return not self.ric()
+
+  
+  def lib(self) -> bool:
+    """left is blocked"""
+    return not self.lic()
 
   
   def mazemove(self):
@@ -199,9 +213,21 @@ class ktools:
     self.tl()
     self.mm(4)
     self.ta()
+    self.jump2(4)
+  
+  def jump2(self, num):
     for _ in range(0, num):
+      while self.rib():
+        self.m()
+      self.tr()
+      self.m()
+      self.tr()
+      self.m()
+      while self.fic():
+        self.m()
+      self.tl
       self.put()
-      self.jump
+    
     
 
 

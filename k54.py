@@ -73,7 +73,7 @@ class ktools:
     return front_is_clear()
     
     
-  def fid(self) -> bool:
+  def fib(self) -> bool:
     """front is blocked"""
     return not self.fic()
 
@@ -86,7 +86,15 @@ class ktools:
       return True  #ends function there
     self.tl()
     return False
-    
+
+  def lic() -> bool:
+    """left is clear"""
+    self.tl()
+    if self.fic():
+      self.tl()
+      return True
+    self.tl()
+    return False
 
   
   def rib(self) -> bool:
@@ -197,26 +205,23 @@ class ktools:
     """beepers present"""
     beepers_present()
   
-  def start():
+  def k54(self):
     self.mm(4)
     self.tl()
     self.mm(4)
+    while beepers_present():
+      self.pick()
+    while self.ric():
+      self.tr()
+      self.m()
+    while beepers_present():
+      self.pick()
+    self.ta()
+    while self.fic():
+      self.m()
+    while beepers_present():
+      self.pick()
     
-  
-  def k54(self, num):
-    while beepers_present() == num:
-      if (num % 2) == 0:
-        while not facing_east():
-          self.tl()
-        self.m()
-        while beepers_present():
-          self.pick()
-      else:
-        while not facing_west():
-          self.tl()
-        self.m()
-        while beepers_present():
-          self.pick()
     
 
 
@@ -224,7 +229,6 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.start()
     kt.k54()
     pass
 

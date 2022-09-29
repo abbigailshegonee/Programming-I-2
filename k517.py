@@ -73,7 +73,7 @@ class ktools:
     return front_is_clear()
     
     
-  def fid(self) -> bool:
+  def fib(self) -> bool:
     """front is blocked"""
     return not self.fic()
 
@@ -193,11 +193,11 @@ class ktools:
         self.m()
     pass
 
-    def k517(self):
-      """code for k517"""
-      while not self.SOB():
-        self.mazemove()
-      self.pick()
+  def k517(self):
+    """code for k517"""
+    while not self.SOB():
+      self.mazemove()
+    self.pick()
 
 def main():
     """ Karel code goes here! """

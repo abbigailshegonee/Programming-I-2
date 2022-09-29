@@ -192,29 +192,23 @@ class ktools:
         self.tl()
         self.m()
     pass
-
-  def start(self):
-    slef.m()
-    self.tl()
-    self.mm(5)
-    self.tr()
   
   def k59(self, num):
     """code for k59"""
+    self.m()
+    self.tl()
+    self.mm(5)
+    self.tr()
     for _ in range(0, num):
-      while self.rib():
+      while self.fic():
+        self.m()
         self.put()
-        self.m()
-      while self.fib():
-        self.tr()
-        self.m()
-      
+      self.tr()
       
 
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.start()
     kt.k59(4)
     pass
 
