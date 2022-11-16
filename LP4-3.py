@@ -6,12 +6,14 @@ def main():
   cost = 0
   if dozens > 0 and dozens < 4:
     dozenPrice = 0.5
-  if dozens >= 4 and dozens < 6:
+  elif dozens >= 4 and dozens < 6:
     dozenPrice = 0.45
-  if dozens >= 6 and dozens < 11:
+  elif dozens >= 6 and dozens < 11:
     dozenPrice = 0.40
-  if dozens >= 11:
+  elif dozens >= 11:
     dozenPrice = 0.35
+  else:
+    print("Invalid number of eggs.")
 
   cost = round((dozens * dozenPrice) + ((dozenPrice/12) * leftover), 2)
 
